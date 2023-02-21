@@ -22,14 +22,17 @@ class Users:
                 c.append((" | ".join(self.user_detail[b])) + "\n")
             file.writelines(c)
 
+    def update_data_to_txt(self):
+        self.__rewrite_back()
+
     def __update_data(self, updated_data):
         for count in range(len(self.user_detail)):
             if self.user_detail[count][0] == updated_data[0]:
                 self.user_detail[count] = updated_data
-                self.__rewrite_back()
                 return True
         return False
 
+    # read
     def find_by_id(self, student_id):
         for a in self.user_detail:
             if a[0] == student_id:
