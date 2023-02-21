@@ -8,13 +8,10 @@ def main():
         print("Cannot find the user")
     else:
         # a.update_name(ans[0], "Clement")
-        print(a.update_name(ans[0], "Clement"))
+        # print(a.update_name(ans[0], "Clement"))
         print(a.user_detail)
-        a.update_membership(ans[0], False)
+        # a.update_membership(ans[0], False)
         print(a.check_membership(ans[0]))
-
-def main2():
-
 
 
 # Press the green button in the gutter to run the script.
