@@ -52,19 +52,19 @@ class Users:
     def update_name(self, student_id, student_name):
         student = self.find_by_id(student_id)
         student[1] = student_name
-        self.__update_data(student)
+        return self.__update_data(student)
 
     def update_status(self, student_id, is_active):
         student = self.find_by_id(student_id)
         student[2] = str(1 if is_active else 0)
-        self.__update_data(student)
+        return self.__update_data(student)
 
     def update_book_borrowed(self, student_id):
         student = self.find_by_id(student_id)
         student[3] = str(1+int(student[3]))
-        self.__update_data(student)
+        return self.__update_data(student)
 
     def update_membership(self, student_id, is_membership):
         student = self.find_by_id(student_id)
         student[4] = str(1 if is_membership else 0)
-        self.__update_data(student)
+        return self.__update_data(student)
