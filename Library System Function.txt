@@ -1,0 +1,43 @@
+- borrow book function (Clement)
+- return book function (Viknesh)
+- book table CRUD (Ashik)
+- user table CRUD (Clement)
+
+normal student
+- max borrow 5 days for a book otherwise will charge RM 1.00 per day
+- 1 week max borrow 2 books
+- will reset max borrow in Every Monday
+
+Membership student
+- max borrow 14 days for a book otherwise will charge RM 0.50 per day
+- 1 week max borrow 5 books
+- will reset max borrow in Every Monday
+
+===================
+Book table
+===================
+Id, Name, Borrow Status (0=borrowing, 1=available),Book Status(0=not in library(deleted),1=In library)
+sample:
+B1 | Little Red Riding Hood | 1 | 1
+B2 | Goodnight Moon by Margaret Brown | 0 | 1
+B3 | The Cat in the Hat by Dr. Seuss | 1 | 1
+
+
+===================
+User table
+===================
+Id, Name, Status (0=no active(Terminated), 1=Active), Total Number of book borrowed, Membership (0=not member, 1=is member)
+sample:
+S1 | Clement Tai | 1 | 4 | 1
+S2 | Danish | 1 | 2 | 0
+S3 | Ali | 0 | 0 | 1
+
+
+=====================
+Borrow record table
+=====================
+User Id, Book Id, Borrow Date, Return Date, Status (1=borrowing, 2=completed)
+S1 | B2 | 21/02/2023 | 24/02/2023 | 2
+S1 | B3 | 23/02/2023 |  | 1
+S2 | B2 | 24/02/2023 |  | 1
+

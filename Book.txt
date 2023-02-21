@@ -1,0 +1,3 @@
+B1 | Little Red Riding Hood | 1 | 1
+B2 | Goodnight Moon by Margaret Brown | 0 | 1
+B3 | The Cat in the Hat by Dr. Seuss | 1 | 1
