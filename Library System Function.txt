@@ -4,15 +4,18 @@
 - user table CRUD (Clement)
 - borrow record table CRUD (Viknesh)
 
-normal student
+Normal User
 - max borrow 5 days for a book otherwise will charge RM 1.00 per day
 - 1 week max borrow 2 books
-- will reset max borrow in Every Monday
+- join membership RM 15 for lifetime
 
-Membership student
+Membership User
 - max borrow 14 days for a book otherwise will charge RM 0.50 per day
 - 1 week max borrow 5 books
+
+Setup
 - will reset max borrow in Every Monday
+- overdue cannot borrow book
 
 ===================
 Book table
