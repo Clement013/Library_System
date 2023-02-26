@@ -38,9 +38,9 @@ class Users(FileDataReadUpdate):
             return False
 
     def check_membership(self, user_id):
-        student = self.find_by_id(user_id)
-        if student is not None:
-            return bool(int(student[4]))
+        user = self.find_by_id(user_id)
+        if user is not None:
+            return bool(int(user[4]))
         else:
             return False
 

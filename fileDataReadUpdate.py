@@ -1,4 +1,7 @@
 class FileDataReadUpdate(object):
+    """
+    This class is used to read and update data from the txt file
+    """
     def __init__(self, path_data, list_detail: list):
         self.path_data = path_data
         self.list_detail = list_detail

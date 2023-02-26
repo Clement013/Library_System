@@ -1,3 +1,20 @@
-B1 | Little Red Riding Hood | 1 | 1
+B1 | Little Red Riding Hood | 0 | 1
 B2 | Goodnight Moon by Margaret Brown | 0 | 1
 B3 | The Cat in the Hat by Dr. Seuss | 1 | 1
+B4 | The Velveteen Rabbit by Margery Williams Bianco | 1 | 1
+B5 | The Giving Tree by Shel Silverstein | 1 | 1
+B6 | The Runaway Bunny by Margaret Wise Brown | 1 | 1
+B7 | The Rainbow Fish by Marcus Pfister | 1 | 1
+B8 | The Secret Garden by Frances Hodgson Burnett | 1 | 1
+B9 | The Little Engine That Could by Watty Piper | 1 | 1
+B10 | Harry Potter and the Philosopher's Stone by J.K. Rowling | 0 | 1
+B11 | Charlotte's Web by E.B. White | 1 | 1
+B12 | Where the Wild Things Are by Maurice Sendak | 1 | 1
+B13 | The Outsiders by S.E. Hinton | 0 | 1
+B14 | Anne of Green Gables by L.M. Montgomery | 1 | 1
+B15 | Little Women by Louisa May Alcott | 1 | 1
+B16 | The Secret of the Old Clock by Carolyn Keene | 1 | 1
+B17 | The Hobbit by J.R.R. Tolkien | 1 | 1
+B18 | The Boxcar Children by Gertrude Chandler Warners | 1 | 1
+B19 | Island of the Blue Dolphins by Scott O'Dell | 1 | 1
+B20 | The Phantom Tollbooth by Norton Juster | 1 | 1

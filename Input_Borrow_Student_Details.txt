@@ -1,3 +1,6 @@
-Student Id, Book Id
+Student Id | Book Id
 S1 | B1
-S3 | B2
+S1 | B10
+S1 | B13
+S1 | B10
+S1 | B101

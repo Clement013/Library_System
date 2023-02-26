@@ -5,16 +5,15 @@
 - borrow record table CRUD (Viknesh)
 
 Normal User
-- max borrow 5 days for a book otherwise will charge RM 1.00 per day
-- 1 week max borrow 2 books
+- max borrow 7 days for a book otherwise will charge RM 1.00 per day
+- max borrow 3 books
 - join membership RM 15 for lifetime
 
 Membership User
 - max borrow 14 days for a book otherwise will charge RM 0.50 per day
-- 1 week max borrow 5 books
+- max borrow 7 books
 
 Setup
-- will reset max borrow in Every Monday
 - overdue cannot borrow book
 
 ===================
