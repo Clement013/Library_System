@@ -18,6 +18,9 @@ class LibrarySystem:
     def borrow_book_main_process(self):
         self.borrow_details = []
         FileDataReadUpdate(conf.input_borrow_details, self.borrow_details)
+        if not len(self.borrow_details) > 0:
+            print("No borrow book details.")
+            return
         self.borrow_details.pop(0)
         print("Input borrow details: " + str(self.borrow_details))
         print("Borrow process started!")

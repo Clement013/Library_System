@@ -3,6 +3,7 @@
 - book table CRUD (Ashik)
 - user table CRUD (Clement)
 - borrow record table CRUD (Viknesh)
+- join membership (Ashik)
 
 Normal User
 - max borrow 7 days for a book otherwise will charge RM 1.00 per day

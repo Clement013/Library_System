@@ -23,12 +23,16 @@ def main_testing():
         # print(a.check_membership(ans[0]))
 
 
+basic_function_list = ["Borrow Book process",
+                       "Return Book Process",
+                       "Join Membership Process",
+                       "Exit System"]
+
+
 def print_basic_library_function():
     print("\nFunction in this Library System:")
-    print("1. Borrow Book process")
-    print("2. Return Book Process")
-    print("3. Join Membership Process")
-    print("4. Exit System")
+    for i in range(len(basic_function_list)):
+        print(f"{i + 1}. {basic_function_list[i]}")
 
 
 def validate_input_number(input_number):
@@ -60,7 +64,7 @@ def main():
             input_function_no = input("\nChoose function to proceed (number): ")
             input_function_no = input_function_no.strip()
             # while the input not equal 1,2,3,4
-            while input_function_no not in (str(i) for i in range(1, 5)):
+            while input_function_no not in (str(i) for i in range(1, len(basic_function_list)+1)):
                 print("Invalid input number value!", end='\n')
                 print_basic_library_function()
                 input_function_no = input("\nChoose function to proceed (number): ")
@@ -69,7 +73,7 @@ def main():
                 atexit.unregister(exit_func)
                 system.ending_process()
                 run = False
-                print("\nExit now...")
+                print("\nSaving and Exit now...")
             else:
                 if input_function_no == str(1):
                     system.borrow_book_main_process()

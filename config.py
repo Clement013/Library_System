@@ -1,7 +1,7 @@
-user_table = "./User.txt"
-book_table = "./Book.txt"
-borrow_record_table = "./Borrow_Record.txt"
-input_borrow_details = "./Input_Borrow_Student_Details.txt"
+user_table = "./Data/User.txt"
+book_table = "./Data/Book.txt"
+borrow_record_table = "./Data/Borrow_Record.txt"
+input_borrow_details = "./Data/Input_Borrow_Student_Details.txt"
 
 normal_charge_overdue = 1.00
 normal_max_borrow = 3
