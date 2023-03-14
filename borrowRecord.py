@@ -51,3 +51,22 @@ class BorrowRecord(FileDataReadUpdate):
                                   datetime.strftime(datetime.now(), conf.dateString), "",
                                   str(enumConf.BorrowRecordStatus.Borrowing.value)])
         return True
+
+    def __update_data(self, updated_data):
+        for count in range(len(self.book_records)):
+            if self.book_records[count][0] == updated_data[0] and self.book_records[count][1] == updated_data[1]:
+                self.book_records[count] = updated_data
+                return True
+        return False
+
+    def find_by_id(self, user_id, book_id):
+        for book_record in self.book_records:
+            if book_record[0] == user_id and book_record[1] == book_id:
+                return book_record
+        return None
+
+    def update_record(self, user_id, book_id, return_date):
+        book_record = self.find_by_id(user_id, book_id)
+        book_record[3] = datetime.strftime(return_date, conf.dateString)
+        book_record[4] = str(enumConf.BorrowRecordStatus.Completed.value)
+        return self.__update_data(book_record)

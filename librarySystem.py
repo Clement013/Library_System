@@ -1,10 +1,10 @@
-import time
-
+from datetime import datetime, timedelta
 import config as conf
 from book import Book
 from borrowRecord import BorrowRecord
 from users import Users
 from fileDataReadUpdate import *
+import enumConfig as enumConf
 
 
 class LibrarySystem:
@@ -53,13 +53,35 @@ class LibrarySystem:
 
     def return_book_main_process(self):
         a = self.users.user_detail
-        print("Function No ready!")
-
-    def join_membership_main_process(self):
-        a = self.users.user_detail
-        print("Function No ready!")
+        user_id = input("Enter user ID: ")
+        book_id = input("Enter book ID: ")
+        self.return_book(user_id, book_id)
+        # print("Function No ready!")
 
     def ending_process(self):
         self.users.update_data_to_txt()
         self.borrowRecord.update_data_to_txt()
         self.book.update_data_to_txt()
+
+    def return_book(self, user_id, book_id):
+        borrow_record = self.borrowRecord.find_by_id(user_id, book_id)
+        if borrow_record is not None and borrow_record[4] == str(enumConf.BorrowRecordStatus.Borrowing.value):
+            self.book.update_book_borrow_status(book_id, True)
+            self.borrowRecord.update_record(user_id, book_id, datetime.now())
+            user = self.users.find_by_id(user_id)
+            if user is not None:
+                membership = self.users.check_membership(user_id)
+                overdue_days = conf.membership_max_borrow_duration if membership else conf.normal_max_borrow_duration
+                days_late = (datetime.today() - datetime.strptime(borrow_record[2],
+                                                                  conf.dateString)).days - overdue_days
+                if days_late > 0:
+                    late_fee = days_late * (
+                         conf.membership_charge_overdue if membership else conf.normal_charge_overdue )
+                    # user.total_late_fee += late_fee
+                    print(f"Please pay RM {late_fee:.2f} for late return.")
+                print("Successfully return the book.")
+
+            else:
+                print("No user found.")
+        else:
+            print("No borrow record found for the specified book and user.")

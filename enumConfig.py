@@ -8,7 +8,7 @@ class UserStatus(Enum):
 
 class BorrowRecordStatus(Enum):
     Borrowing = 1
-    Complete = 2
+    Completed = 2
 
 
 class BookBorrowStatus(Enum):

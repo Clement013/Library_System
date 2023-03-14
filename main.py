@@ -25,7 +25,6 @@ def main_testing():
 
 basic_function_list = ["Borrow Book process",
                        "Return Book Process",
-                       "Join Membership Process",
                        "Exit System"]
 
 
@@ -69,7 +68,7 @@ def main():
                 print_basic_library_function()
                 input_function_no = input("\nChoose function to proceed (number): ")
                 input_function_no = input_function_no.strip()
-            if input_function_no == str(4):
+            if input_function_no == str(3):
                 atexit.unregister(exit_func)
                 system.ending_process()
                 run = False
@@ -79,8 +78,8 @@ def main():
                     system.borrow_book_main_process()
                 elif input_function_no == str(2):
                     system.return_book_main_process()
-                elif input_function_no == str(3):
-                    system.join_membership_main_process()
+                # elif input_function_no == str(3):
+                #     system.join_membership_main_process()
                 else:
                     pass
     except ValueError as e:
