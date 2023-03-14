@@ -16,6 +16,7 @@ class LibrarySystem:
         self.book = Book()
         self.borrow_details = []
 
+    # borrow book process
     def borrow_book_main_process(self):
         self.borrow_details = []
         FileDataReadUpdate(conf.input_borrow_details, self.borrow_details)
@@ -52,6 +53,7 @@ class LibrarySystem:
 
         print("Borrow process completed!")
 
+    # return book process
     def return_book_main_process(self):
         a = self.users.user_detail
         user_id = input("Enter user ID: ")
@@ -59,11 +61,13 @@ class LibrarySystem:
         self.return_book(user_id, book_id)
         # print("Function No ready!")
 
+    # ending process to update data to txt
     def ending_process(self):
         self.users.update_data_to_txt()
         self.borrowRecord.update_data_to_txt()
         self.book.update_data_to_txt()
 
+    # return book process
     def return_book(self, user_id, book_id):
         borrow_record = self.borrowRecord.find_by_id(user_id, book_id)
         if borrow_record is not None and borrow_record[4] == str(enumConf.BorrowRecordStatus.Borrowing.value):

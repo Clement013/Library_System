@@ -1,6 +1,6 @@
-B1 | Little Red Riding Hood | 1 | 1
-B2 | Goodnight Moon by Margaret Brown | 1 | 1
-B3 | The Cat in the Hat by Dr. Seuss | 1 | 1
+B1 | Little Red Riding Hood | 0 | 1
+B2 | Goodnight Moon by Margaret Brown | 0 | 1
+B3 | The Cat in the Hat by Dr. Seuss | 0 | 1
 B4 | The Velveteen Rabbit by Margery Williams Bianco | 1 | 1
 B5 | The Giving Tree by Shel Silverstein | 1 | 1
 B6 | The Runaway Bunny by Margaret Wise Brown | 1 | 1

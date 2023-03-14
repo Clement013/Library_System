@@ -7,6 +7,7 @@ class FileDataReadUpdate(object):
         self.list_detail = list_detail
         self.__read_file()
 
+    # read file
     def __read_file(self):
         with open(self.path_data, "r") as file:
             for user in file.readlines():
@@ -14,6 +15,7 @@ class FileDataReadUpdate(object):
                 self.list_detail.append(list_split)
         return self.list_detail
 
+    # rewrite file
     def _rewrite_back(self):
         with open(self.path_data, "w") as file:
             c = []
