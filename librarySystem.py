@@ -59,7 +59,6 @@ class LibrarySystem:
         user_id = input("Enter user ID: ")
         book_id = input("Enter book ID: ")
         self.return_book(user_id, book_id)
-        # print("Function No ready!")
 
     # ending process to update data to txt
     def ending_process(self):

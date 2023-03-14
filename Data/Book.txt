@@ -11,7 +11,7 @@ B10 | Harry Potter and the Philosopher's Stone by J.K. Rowling | 1 | 1
 B11 | Charlotte's Web by E.B. White | 1 | 1
 B12 | Where the Wild Things Are by Maurice Sendak | 1 | 1
 B13 | The Outsiders by S.E. Hinton | 1 | 1
-B14 | Anne of Green Gables by L.M. Montgomery | 1 | 1
+B14 | Anne of Green Gables by L.M. Montgomery | 0 | 1
 B15 | Little Women by Louisa May Alcott | 1 | 1
 B16 | The Secret of the Old Clock by Carolyn Keene | 1 | 1
 B17 | The Hobbit by J.R.R. Tolkien | 1 | 1
