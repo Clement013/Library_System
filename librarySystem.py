@@ -1,4 +1,5 @@
-from datetime import datetime, timedelta
+from datetime import datetime
+import time
 import config as conf
 from book import Book
 from borrowRecord import BorrowRecord
@@ -30,10 +31,10 @@ class LibrarySystem:
                 time.sleep(1)
                 print("Checking valid to borrow...")
                 if not self.users.user_valid_to_borrow(borrow_detail[0]):
-                    print("The user is invalid to borrow. UserId: " + borrow_detail[0])
+                    print("The user is invalid to borrow. UserId: " + borrow_detail[0], end="\n\n")
                     time.sleep(1)
                 elif not self.book.check_book_available(borrow_detail[1]):
-                    print("The book is invalid to borrow. BookId: " + borrow_detail[1])
+                    print("The book is not available to borrow.  BookId: " + borrow_detail[1], end="\n\n")
                     time.sleep(1)
                 else:
                     if self.borrowRecord.check_user_able_to_borrow(
@@ -76,7 +77,7 @@ class LibrarySystem:
                                                                   conf.dateString)).days - overdue_days
                 if days_late > 0:
                     late_fee = days_late * (
-                         conf.membership_charge_overdue if membership else conf.normal_charge_overdue )
+                        conf.membership_charge_overdue if membership else conf.normal_charge_overdue)
                     # user.total_late_fee += late_fee
                     print(f"Please pay RM {late_fee:.2f} for late return.")
                 print("Successfully return the book.")

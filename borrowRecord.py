@@ -31,7 +31,7 @@ class BorrowRecord(FileDataReadUpdate):
 
         if len(list(overdue)) > 0:
             print("The user has borrowed some books and has not returned in time. "
-                  "Books cannot be borrowed. User Id: " + user_id)
+                  "Books cannot be borrowed. User Id: " + user_id, end="\n\n")
             return False
 
         borrowing_books = list(filter(
@@ -40,7 +40,7 @@ class BorrowRecord(FileDataReadUpdate):
 
         if len(list(borrowing_books)) >= max_borrow:
             print("The user has borrowed the maximum number of books allowed. "
-                  "Books cannot be borrowed. User Id: " + user_id)
+                  "Books cannot be borrowed. User Id: " + user_id, end="\n\n")
             print(f"Current the books borrowed by the user: {['Book Id: ' + a[1] for a in borrowing_books]}",
                   end="\n\n")
             return False
