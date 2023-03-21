@@ -4,7 +4,7 @@ B3 | The Cat in the Hat by Dr. Seuss | 0 | 1
 B4 | The Velveteen Rabbit by Margery Williams Bianco | 1 | 1
 B5 | The Giving Tree by Shel Silverstein | 1 | 1
 B6 | The Runaway Bunny by Margaret Wise Brown | 1 | 1
-B7 | The Rainbow Fish by Marcus Pfister | 1 | 1
+B7 | The Rainbow Fish by Marcus Pfister | 0 | 1
 B8 | The Secret Garden by Frances Hodgson Burnett | 1 | 1
 B9 | The Little Engine That Could by Watty Piper | 1 | 1
 B10 | Harry Potter and the Philosopher's Stone by J.K. Rowling | 1 | 1

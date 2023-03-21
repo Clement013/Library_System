@@ -1,4 +1,4 @@
-class FileDataReadUpdate(object):
+class FileDataReadUpdate:
     """
     This class is used to read and update data from the txt file
     """

@@ -55,7 +55,6 @@ class LibrarySystem:
 
     # return book process
     def return_book_main_process(self):
-        a = self.users.user_detail
         user_id = input("Enter user ID: ")
         book_id = input("Enter book ID: ")
         self.return_book(user_id, book_id)
