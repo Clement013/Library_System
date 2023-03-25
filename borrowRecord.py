@@ -8,6 +8,7 @@ class BorrowRecord(FileDataReadUpdate):
 
     def __init__(self):
         """
+        Inside the list, the data is stored as:
         [User Id, Book Id, Borrow Date, Return Date, Status (1=borrowing, 2=completed)]
         """
         self.book_records = []

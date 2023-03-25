@@ -6,6 +6,7 @@ from fileDataReadUpdate import *
 class Book(FileDataReadUpdate):
     def __init__(self):
         """
+        Inside the list, the data is stored as:
         [Id, Name, Borrow Status (0=borrowing, 1=available),Book Status(0=not in library(deleted),1=In library)]
         """
         self.books = []

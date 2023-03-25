@@ -7,6 +7,7 @@ class Users(FileDataReadUpdate):
 
     def __init__(self):
         """
+        Inside the list, the data is stored as:
         [Id, Name, Status (0=Terminated, 1=Active),
         Total Number of book borrowed, Membership (0=not member, 1=is member)]
         """
